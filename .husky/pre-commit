@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+echo 'Running husky pre-commit\n\n'
+npm run lint:staged
