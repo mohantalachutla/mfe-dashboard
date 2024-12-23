@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { MODAL_TYPES } from '../../constants';
 import { hideModal } from '../../reducers/modal';
 import Modal from '../base/Modal';
+import MfeCardView from '../MfeCardView';
 
 const GlobalModal = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,8 @@ const GlobalModal = () => {
 const getModalByType = (type) => {
   switch (type) {
     //add more modals
-
+    case MODAL_TYPES.MFE_CARD_VIEW:
+      return MfeCardView;
     //default
     case MODAL_TYPES.DEFAULT:
     default:

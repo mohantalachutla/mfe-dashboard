@@ -6,6 +6,7 @@ export const BANNER_TYPES = {
 };
 export const MODAL_TYPES = {
   DEFAULT: 'default',
+  MFE_CARD_VIEW: 'mfe-view',
 };
 
 export const ALERT_TYPES = {

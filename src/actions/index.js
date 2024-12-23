@@ -11,3 +11,7 @@ export const loginAction = createAction('login/request', (payload) => ({
 export const registerAction = createAction('register/request', (payload) => ({
   payload,
 }));
+
+export const fetchMFEAction = createAction('fetchMFE/request', (payload) => ({
+  payload,
+}));
