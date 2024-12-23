@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
+import { fetchMFEAction } from 'actions';
 
 import Container from 'components/base/Container';
-import MfeDeck from 'components/MfeDeck';
-import { useEffect } from 'react';
-import { fetchMFEAction } from 'actions';
+import MfePanel from 'components/MfePanel';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -12,9 +13,9 @@ const Home = () => {
     dispatch(fetchMFEAction({ status: '' }));
   }, []);
   return (
-    <Container>
+    <Container fluid={true}>
       <h1 className="text-3xl text text-center">MFE Dashboard</h1>
-      <MfeDeck mfeList={mfeList} />
+      <MfePanel mfeList={mfeList} />
     </Container>
   );
 };

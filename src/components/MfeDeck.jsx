@@ -1,5 +1,6 @@
 import Container from './base/Container';
 import MfeCard from './MfeCard';
+import MfeEmpty from './MfeEmpty';
 
 // eslint-disable-next-line @eslint-react/no-unstable-default-props
 const MfeDeck = ({ mfeList = [] }) => {
@@ -9,14 +10,6 @@ const MfeDeck = ({ mfeList = [] }) => {
         <MfeCard key={mfe.name} {...mfe} />
       ))}
       {mfeList.length === 0 && <MfeEmpty />}
-    </Container>
-  );
-};
-
-const MfeEmpty = () => {
-  return (
-    <Container size="lg">
-      <h1>No MFEs found</h1>
     </Container>
   );
 };

@@ -9,7 +9,7 @@ const MfeCardView = (props) => {
         <View label="Description:" value={props.description} />
         <View label="Version:" value={props.version} />
         <View
-          label="URL:"
+          label="Local URL:"
           element={
             <a href={props.url} className="text-blue-300 hover:text-blue-500">
               {props.url}

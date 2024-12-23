@@ -8,7 +8,7 @@ export const verifyToken = (token) => {
       return true;
     }
   } catch {
-    console.error('Invalid token');
+    // console.error('Invalid token');
   }
   return false;
 };
