@@ -36,7 +36,7 @@
     "port": 8000
   },
   "scripts": {
-    "start": "serve -s lib -p 8080",
+    "start": "serve -s lib -p 8000",
     "start:dev": "webpack serve --mode development --live-reload --hot --config ./webpack/webpack.config.cjs ",
     "build": "webpack --mode production --config ./webpack/webpack.config.cjs ",
     "build:dev": "webpack --mode development --watch --config ./webpack/webpack.config.cjs ",
